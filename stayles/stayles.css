@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #fcf7be9b;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 70px;
+  margin-right: 0px;
+  color: bisque;
+  transition: 0.3 ease;
+  overflow-x: hidden;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(38, 115, 29);
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content-image {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: #c6008b;
+}
+
+h3 {
+  color: #c6008b;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #ffdd31;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a:hover {
+  font-weight: bold;
+  transform: translatex(-5%);
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  max-width: 100px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  background-color: #d7d054;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  transition: transform;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+  }
+}
